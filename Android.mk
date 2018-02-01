@@ -22,6 +22,7 @@ ifneq ("$(wildcard $(PRODUCT_OUT)/odm.img)","")
 endif
 
 # Copy all files in order to rebuild ODM image with command "make custom_images"
+$(shell cp $(LOCAL_PATH)/odm_version.prop $(TARGET_OUT_ODM)/. > /dev/null)
 $(shell mkdir -p $(TARGET_OUT_ODM)/bin)
 $(foreach p,$(wildcard $(LOCAL_PATH)/bin/*),$(shell cp -r $(LOCAL_PATH)/bin/$(notdir $(p)) $(TARGET_OUT_ODM)/bin/. > /dev/null))
 $(shell mkdir -p $(TARGET_OUT_ODM)/firmware)
@@ -30,5 +31,7 @@ $(shell mkdir -p $(TARGET_OUT_ODM)/lib)
 $(foreach p,$(wildcard $(LOCAL_PATH)/lib/*),$(shell cp -r $(LOCAL_PATH)/lib/$(notdir $(p)) $(TARGET_OUT_ODM)/lib/. > /dev/null))
 $(shell mkdir -p $(TARGET_OUT_ODM)/lib64)
 $(foreach p,$(wildcard $(LOCAL_PATH)/lib64/*),$(shell cp -r $(LOCAL_PATH)/lib64/$(notdir $(p)) $(TARGET_OUT_ODM)/lib64/. > /dev/null))
+$(shell mkdir -p $(TARGET_OUT_ODM)/radio)
+$(foreach p,$(wildcard $(LOCAL_PATH)/radio/*),$(shell cp -r $(LOCAL_PATH)/radio/$(notdir $(p)) $(TARGET_OUT_ODM)/radio/. > /dev/null))
 
 endif
