@@ -1,0 +1,26 @@
+v01 / 2017-12-10
+    + First release.
+
+v02 / 2017-12-17
+    * Adreno blobs update.
+    * Build Date: 09/22/17
+
+v03 / 2018-01-03
+    + Add adsprpcd.
+    + Add wcnss_service.
+    * Update sensors libs.
+    * Update sensor service.
+
+v04 / 2018-02-01
+    - Remove adsprpcd.
+    * Update qmuxd.
+    * Update netmgrd.
+    * Update wcnss_service.
+
+v05 /2018-02-24
+    * Adreno blobs update.
+    * Build Date: 11/03/17
+    * Remote Branch: LA.BR.1.3.7_rb1.08.00.00.336.020
+    *
+    - Remove sensors.qcom.
+    - Remove adsprpcd libs.
