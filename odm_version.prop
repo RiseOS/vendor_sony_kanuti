@@ -1,4 +1,4 @@
 ro.kernel.version=3.10
 ro.build.version=8.1.0
 ro.platform.version=msm8916
-ro.vendor.version=5
+ro.vendor.version=6
